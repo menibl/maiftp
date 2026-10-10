@@ -31,3 +31,5 @@ dist-*/
 *.pyz
 *.toc
 .venv/
+release-staging/
+release-assets/
