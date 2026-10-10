@@ -10,7 +10,7 @@ a = Analysis(
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=['transformers', 'nltk', 'librosa', 'sklearn', 'sqlalchemy', 'openpyxl', 'yt_dlp', 'jupyter', 'notebook'],
+    excludes=['transformers', 'nltk', 'librosa', 'sklearn', 'sqlalchemy', 'openpyxl', 'yt_dlp', 'jupyter', 'notebook', '__main__'],
     noarchive=False,
     optimize=0,
 )
