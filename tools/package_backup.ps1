@@ -44,7 +44,8 @@ foreach ($entry in $packages.GetEnumerator()) {
     [IO.Compression.ZipFile]::CreateFromDirectory($entry.Value, (Join-Path $assets $entry.Key))
     Write-Host "Packaged $($entry.Key)"
 }
-& git -C $root archive --format=zip --output=(Join-Path $assets 'MaiFocus-Source-v3.18-backup.1.zip') HEAD
+$sourceArchive = Join-Path $assets 'MaiFocus-Source-v3.18-backup.1.zip'
+& git -C $root archive --format=zip "--output=$sourceArchive" HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Source archive failed' }
 $checksums = Get-ChildItem $assets -Filter '*.zip' | Sort-Object Name | ForEach-Object {
     $hash = Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256
