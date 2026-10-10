@@ -1,0 +1,33 @@
+# Customer configuration and secrets
+.env
+.env.*
+*.env
+!*.env.example
+config.json
+config.*.json
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*.json
+# Runtime data
+*.log
+*.sqlite*
+*.db
+__pycache__/
+*.pyc
+hikvision_images/
+data/
+uploads/
+# Build outputs are published as release assets
+build/
+build-*/
+dist/
+dist-*/
+*.exe
+*.dll
+*.zip
+*.pkg
+*.pyz
+*.toc
+.venv/

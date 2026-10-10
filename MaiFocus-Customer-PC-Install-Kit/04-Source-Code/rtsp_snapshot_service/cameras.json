@@ -1,0 +1,28 @@
+{
+  "rtsp": {
+    "username": "admin",
+    "password": "CHANGE_ME",
+    "port": 554,
+    "path": "/Streaming/Channels/101",
+    "transport": "tcp"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8088,
+    "api_token": ""
+  },
+  "capture": {
+    "timeout_seconds": 12,
+    "gap_seconds_between_cameras": 0.5,
+    "jpeg_quality": 2
+  },
+  "cameras": [],
+  "warm_capture": {
+    "enabled": true,
+    "max_streams": 2,
+    "idle_timeout_seconds": 120,
+    "frame_max_age_seconds": 5,
+    "first_frame_timeout_seconds": 2,
+    "fps": 1
+  }
+}

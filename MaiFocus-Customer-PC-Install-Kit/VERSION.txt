@@ -1,0 +1,10 @@
+MaiFocus Customer PC Install Kit
+Version: 3.18
+Release date: 2026-08-24
+
+Versioning policy:
+- Current stable major version starts at 2.0.
+- Small updates continue as 2.1, 2.2, ... 2.10.
+- Breaking or large changes move to 3.0 and later.
+- Keep the latest generic package as MaiFocus-Customer-PC-Install-Kit.zip.
+- Keep archived release packages as MaiFocus-Customer-PC-Install-Kit-vX.Y.zip.

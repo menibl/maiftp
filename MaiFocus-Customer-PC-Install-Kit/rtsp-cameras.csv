@@ -1,0 +1,3 @@
+enabled,user_email,mission_id,mission_name,camera_id,edge_camera_name,edge_ip,server_camera_name,rtsp_username,rtsp_password,rtsp_port,rtsp_path
+no,customer@example.com,,,,Camera-1,192.168.1.101,Camera-1,,,,
+no,customer@example.com,,,,Camera-2,192.168.1.102,Camera-2,,,,

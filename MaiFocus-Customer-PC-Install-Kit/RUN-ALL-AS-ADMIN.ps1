@@ -1,0 +1,20 @@
+$ErrorActionPreference = "Stop"
+
+Write-Host "MaiFocus full install started."
+Write-Host "Run this PowerShell window as Administrator."
+Write-Host ""
+
+& "$PSScriptRoot\01-Install-Windows-Firewall.ps1"
+& "$PSScriptRoot\02-Configure-And-Start-EdgeAgent.ps1"
+& "$PSScriptRoot\03-Install-Startup-Autostart.ps1"
+& "$PSScriptRoot\04-Configure-RTSP-Cameras.ps1"
+& "$PSScriptRoot\04-Start-RTSP-Snapshot-Service.ps1"
+& "$PSScriptRoot\04-Install-RTSP-Startup-Autostart.ps1"
+& "$PSScriptRoot\06-Install-Service-Watchdog-Autostart.ps1"
+& "$PSScriptRoot\07-Install-Daily-Image-Cleanup.ps1"
+& "$PSScriptRoot\09-Install-Log-Viewer-At-Logon.ps1"
+& "$PSScriptRoot\10-Install-GUI-At-Logon.ps1"
+& "$PSScriptRoot\05-Validate-Installation.ps1"
+
+Write-Host ""
+Write-Host "[DONE] MaiFocus installation completed."
